@@ -37,3 +37,8 @@ Implementation of these trigonometric functions will be done using Taylor Series
 ## Notes
 
 11/1/2019 - Repository created
+
+## to do
+J unit test file
+
+Method(not implement)
