@@ -31,7 +31,7 @@ public class CosTest {
     public static Collection data(){
         return Arrays.asList(new Object[][] {
                 {0.0, 1.0},
-                {90, 0.0},
+                {90.0, 0.0},
                 {Double.POSITIVE_INFINITY, Double.NaN},
                 {Double.NEGATIVE_INFINITY, Double.NaN}
         } );

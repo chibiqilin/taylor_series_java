@@ -31,7 +31,7 @@ public class TanTest {
     public static Collection data(){
         return Arrays.asList(new Object[][] {
                 {0.0, 0.0},
-                {90, Double.NaN},
+                {90.0, Double.NaN},
                 {Double.POSITIVE_INFINITY, Double.NaN},
                 {Double.NEGATIVE_INFINITY, Double.NaN}
         } );
