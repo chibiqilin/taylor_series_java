@@ -31,15 +31,15 @@ public class TanTest {
     public static Collection data(){
         return Arrays.asList(new Object[][] {
                 {0.0, 0.0},
-                {30,0.57735},
-                {45,1},
-                {60,1.73205},
-                {90,Double.NaN},
-                {120,-1.73205},
-                {150,-0.57735},
-                {180,0},
-                {270,Double.NaN},
-                {360,0},
+                {30.0,0.57735},
+                {45.0,1.0},
+                {60.0,1.73205},
+                {90.0,Double.NaN},
+                {120.0,-1.73205},
+                {150.0,-0.57735},
+                {180.0,0.0},
+                {270.0,Double.NaN},
+                {360.0,0.0},
                 {Double.POSITIVE_INFINITY, Double.NaN},
                 {Double.NEGATIVE_INFINITY, Double.NaN}
         } );
