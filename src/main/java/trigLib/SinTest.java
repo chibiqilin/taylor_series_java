@@ -31,15 +31,15 @@ public class SinTest {
     public static Collection data(){
         return Arrays.asList(new Object[][] {
             {0.0, 0.0},
-            {90.0, 1},
+            {90.0, 1.0},
             {30.0,0.5},
             {45.0,0.70710},
-            {60,0.86602},
-            {120,0.86602},
-            {150,0.5},
-            {180,0},
-            {270,-1},
-            {360,0},
+            {60.0,0.86602},
+            {120.0,0.86602},
+            {150.0,0.5},
+            {180.0,0.0},
+            {270.0,-1.0},
+            {360.0,0.0},
             //TODO FIX THE INFINITY VALUE?
             {Double.POSITIVE_INFINITY, Double.NaN},
             {Double.NEGATIVE_INFINITY, Double.NaN}
@@ -51,6 +51,8 @@ public class SinTest {
     public void testSinTest(){
         System.out.println("Sin("+input+") = "+expected);
         //test 5 decimal accuracy
-        assertEquals(expected, trigLib.sin(input),0.00001);
+//        assertEquals(expected, trigLib.sin(input),0.00001);
+        //roy secret test case don't use, don't bother
+        assertEquals(expected, main.sin(input),0.00001);
     }
 }
