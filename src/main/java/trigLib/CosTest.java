@@ -48,8 +48,8 @@ public class CosTest {
     @Test
     public void testCosTest(){
         System.out.println("Cos("+input+") = "+expected);
-//        assertEquals(expected, trigLib.cos(input),0.00001);
+        assertEquals(expected, trigLib.cos(input),0.00001);
         //again roy secret test file , do not bother
-        assertEquals(expected, main.cos(input),0.00001);
+//        assertEquals(expected, main.cos(input),0.00001);
     }
 }
