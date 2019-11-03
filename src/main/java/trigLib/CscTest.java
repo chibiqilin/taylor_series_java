@@ -9,7 +9,6 @@ import java.util.Arrays;
 import java.util.Collection;
 
 import static org.junit.Assert.assertEquals;
-import static trigLib.trigLib.csc;
 
 @RunWith(Parameterized.class)
 public class CscTest {
@@ -30,8 +29,20 @@ public class CscTest {
     @Parameterized.Parameters
     public static Collection data(){
         return Arrays.asList(new Object[][] {
-                {0.0, Double.NaN},
-                {90.0, 1.0},
+        	//TODO double check this one later
+            {0.0, Double.NaN},
+            {30.0,2},
+            {45.0,1.41421},
+            {60,1.1547005},
+            {90.0, 1},
+            {120,1.15470},
+            {150,2},
+            //be careful with this test!
+            {180,Double.NaN},
+            {270,-1},
+            //TODO shit happened at here!!!!!!!! level max warning
+            {360,Double.NaN},
+            //TODO FIX THE INFINITY VALUE?
                 {Double.POSITIVE_INFINITY, Double.NaN},
                 {Double.NEGATIVE_INFINITY, Double.NaN}
         } );
@@ -40,6 +51,6 @@ public class CscTest {
     @Test
     public void testCscTest(){
         System.out.println("Csc("+input+") = "+expected);
-        assertEquals(expected, csc(input));
+        assertEquals(expected, trigLib.csc(input),0.00001);
     }
 }

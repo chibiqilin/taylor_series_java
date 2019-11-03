@@ -1,4 +1,4 @@
-package trigLib;,
+package trigLib;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.Collection;
 
 import static org.junit.Assert.assertEquals;
-import static trigLib.trigLib.trigLib.sin;
+
 
 @RunWith(Parameterized.class)
 public class SinTest {
@@ -40,6 +40,7 @@ public class SinTest {
             {180,0},
             {270,-1},
             {360,0},
+            //TODO FIX THE INFINITY VALUE?
             {Double.POSITIVE_INFINITY, Double.NaN},
             {Double.NEGATIVE_INFINITY, Double.NaN}
             //TODO: make catch the error input
@@ -49,6 +50,7 @@ public class SinTest {
     @Test
     public void testSinTest(){
         System.out.println("Sin("+input+") = "+expected);
-        assertEquals(expected, sin(input));
+        //test 5 decimal accuracy
+        assertEquals(expected, trigLib.sin(input),0.00001);
     }
 }

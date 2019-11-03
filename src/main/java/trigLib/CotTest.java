@@ -9,7 +9,6 @@ import java.util.Arrays;
 import java.util.Collection;
 
 import static org.junit.Assert.assertEquals;
-import static trigLib.trigLib.cot;
 
 @RunWith(Parameterized.class)
 public class CotTest {
@@ -30,8 +29,19 @@ public class CotTest {
     @Parameterized.Parameters
     public static Collection data(){
         return Arrays.asList(new Object[][] {
-                {0.0, Double.NaN},
-                {90.0, 1.0},
+        	//TODO double check this one later
+            {0.0, Double.NaN},
+            {30, 1.73205},
+            {45.0, 1},
+            {60,0.57735},
+            {90.0, 0},
+            {120,-0.57735},
+            {150,-1.73205},
+            //be careful with this test!
+            {180,Double.NaN},
+            {270,Double.NaN},
+            //TODO shit happened at here!!!!!!!! level max warning
+            {360,Double.NaN},
                 {Double.POSITIVE_INFINITY, Double.NaN},
                 {Double.NEGATIVE_INFINITY, Double.NaN}
         } );
@@ -40,6 +50,6 @@ public class CotTest {
     @Test
     public void testCotTest(){
         System.out.println("Cot("+input+") = "+expected);
-        assertEquals(expected, cot(input));
+        assertEquals(expected, trigLib.cot(input),0.00001);
     }
 }

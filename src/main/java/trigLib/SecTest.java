@@ -9,7 +9,6 @@ import java.util.Arrays;
 import java.util.Collection;
 
 import static org.junit.Assert.assertEquals;
-import static trigLib.trigLib.sec;
 
 @RunWith(Parameterized.class)
 public class SecTest {
@@ -30,8 +29,18 @@ public class SecTest {
     @Parameterized.Parameters
     public static Collection data(){
         return Arrays.asList(new Object[][] {
-                {0.0, 1.0},
-                {90.0, Double.NaN},
+            {0.0, 1},
+            {30.0,1.15470},
+            {45.0,1.41421},
+            {60,2},
+            {90.0, Double.POSITIVE_INFINITY},
+            {120,-2},
+            {150,-1.15470},
+            {180,-1},
+            //be careful with this test!
+            {270,Double.NaN},
+            {360,1},
+            //TODO FIX THE INFINITY VALUE?
                 {Double.POSITIVE_INFINITY, Double.NaN},
                 {Double.NEGATIVE_INFINITY, Double.NaN}
         } );
@@ -40,6 +49,6 @@ public class SecTest {
     @Test
     public void testSecTest(){
         System.out.println("Sec("+input+") = "+expected);
-        assertEquals(expected, sec(input));
+        assertEquals(expected, trigLib.sec(input),0.00001);
     }
 }
