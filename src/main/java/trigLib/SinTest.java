@@ -1,14 +1,19 @@
 package trigLib;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+import org.junit.runners.Suite;
 
 import java.util.Arrays;
 import java.util.Collection;
 
+import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThat;
+import static org.junit.Assert.fail;
 
 
 @RunWith(Parameterized.class)
@@ -26,6 +31,7 @@ public class SinTest {
     public void initialize(){
         //before code
     }
+
 
     @Parameterized.Parameters
     public static Collection data(){
@@ -51,9 +57,10 @@ public class SinTest {
     public void testSinTest(){
         System.out.println("Sin("+input+") = "+expected);
         //test 5 decimal accuracy
-//        assertEquals(expected, trigLib.sin(input),0.00001);
-        
+        assertEquals(expected, trigLib.sin(input),0.00001);
+
         //roy secret test case don't use, don't bother
-        assertEquals(expected, main.sin(input),0.00001);
+        //assertEquals(expected, main.sin(input),0.00001);
     }
 }
+

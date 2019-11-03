@@ -20,32 +20,34 @@
     <session id="2021842095">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="14" />
+          <entry key="java" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="14" />
+          <entry key="JAVA" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3241" />
+          <entry key="dummy" value="9" />
+          <entry key="java" value="5282" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3241" />
+          <entry key="JAVA" value="5282" />
+          <entry key="PLAIN_TEXT" value="9" />
         </counts>
       </usages-collector>
     </session>
@@ -55,10 +57,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/SinTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+            <state relative-caret-position="695">
+              <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/mismatchTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="50" lean-forward="true" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/TrigTypeMismatchException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+              <folding>
+                <element signature="e#130#131#0" expanded="true" />
+                <element signature="e#152#153#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -67,11 +94,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/TanTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="33" column="19" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="425">
+              <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -79,11 +103,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/SecTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="398">
+              <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -92,19 +113,16 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/CscTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="219">
-              <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/trigLib.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="6" column="20" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="20" />
+            <state relative-caret-position="374">
+              <caret line="32" column="78" lean-forward="true" selection-start-line="32" selection-start-column="78" selection-end-line="32" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -112,23 +130,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/CotTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="500">
+              <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/CosTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="304">
+              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
             </state>
           </provider>
         </entry>
@@ -458,13 +470,15 @@
         <option value="$PROJECT_DIR$/src/test/java/TestSuite_1.java" />
         <option value="$PROJECT_DIR$/src/main/java/trigLib/TestSuite_1.java" />
         <option value="$PROJECT_DIR$/src/main/java/trigLib/trigLibTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/trigLib/SinTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/trigLib/trigLib.java" />
         <option value="$PROJECT_DIR$/src/main/java/trigLib/TanTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/trigLib/SecTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/trigLib/CscTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/trigLib/CotTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/trigLib/CosTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/trigLib/TrigTypeMismatchException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/trigLib/SinTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/trigLib/mismatchTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/trigLib/trigLib.java" />
       </list>
     </option>
   </component>
@@ -521,13 +535,16 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572754158455" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572818686926" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="trigLib" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -550,16 +567,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CosTest">
-    <configuration name="All in taylorTrig_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="taylorTrig_test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CosTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.mismatchTest">
+    <configuration name="SinTest$mismatchSinTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="taylorTrig_main" />
       <extension name="coverage">
         <pattern>
@@ -568,7 +577,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="trigLib" />
-      <option name="MAIN_CLASS_NAME" value="trigLib.CosTest" />
+      <option name="MAIN_CLASS_NAME" value="trigLib.SinTest$mismatchSinTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -587,7 +596,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSuite_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="mismatchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="taylorTrig_main" />
       <extension name="coverage">
         <pattern>
@@ -596,7 +605,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="trigLib" />
-      <option name="MAIN_CLASS_NAME" value="trigLib.TestSuite_1" />
+      <option name="MAIN_CLASS_NAME" value="trigLib.mismatchTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mismatchTest.sinMismatch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="taylorTrig_main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="trigLib.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="trigLib" />
+      <option name="MAIN_CLASS_NAME" value="trigLib.mismatchTest" />
+      <option name="METHOD_NAME" value="sinMismatch" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -663,19 +688,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.All in taylorTrig_test" />
-      <item itemvalue="JUnit.TestSuite_1" />
       <item itemvalue="JUnit.SinTest" />
       <item itemvalue="JUnit.trigLib in taylorTrig_main" />
-      <item itemvalue="JUnit.CosTest" />
+      <item itemvalue="JUnit.SinTest$mismatchSinTest" />
+      <item itemvalue="JUnit.mismatchTest" />
+      <item itemvalue="JUnit.mismatchTest.sinMismatch" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CosTest" />
+        <item itemvalue="JUnit.mismatchTest" />
+        <item itemvalue="JUnit.mismatchTest.sinMismatch" />
         <item itemvalue="JUnit.trigLib in taylorTrig_main" />
         <item itemvalue="JUnit.SinTest" />
-        <item itemvalue="JUnit.TestSuite_1" />
-        <item itemvalue="JUnit.All in taylorTrig_test" />
+        <item itemvalue="JUnit.SinTest$mismatchSinTest" />
       </list>
     </recent_temporary>
   </component>
@@ -693,53 +718,52 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SinTest - 2019.11.02 at 23h 25m 38s.xml">
+    <history-entry file="SinTest$mismatchSinTest - 2019.11.03 at 16h 38m 44s.xml">
+      <configuration name="SinTest$mismatchSinTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SinTest - 2019.11.03 at 16h 39m 28s.xml">
       <configuration name="SinTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SinTest - 2019.11.02 at 23h 27m 06s.xml">
-      <configuration name="SinTest" configurationId="JUnit" />
+    <history-entry file="mismatchTest - 2019.11.03 at 16h 50m 28s.xml">
+      <configuration name="mismatchTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SinTest - 2019.11.02 at 23h 30m 51s.xml">
-      <configuration name="SinTest" configurationId="JUnit" />
+    <history-entry file="mismatchTest - 2019.11.03 at 16h 51m 25s.xml">
+      <configuration name="mismatchTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="trigLib_in_taylorTrig_main - 2019.11.02 at 23h 38m 07s.xml">
+    <history-entry file="trigLib_in_taylorTrig_main - 2019.11.03 at 16h 52m 50s.xml">
       <configuration name="trigLib in taylorTrig_main" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="trigLib_in_taylorTrig_main - 2019.11.02 at 23h 43m 50s.xml">
-      <configuration name="trigLib in taylorTrig_main" configurationId="JUnit" />
+    <history-entry file="mismatchTest - 2019.11.03 at 16h 53m 06s.xml">
+      <configuration name="mismatchTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="trigLib_in_taylorTrig_main - 2019.11.02 at 23h 47m 11s.xml">
-      <configuration name="trigLib in taylorTrig_main" configurationId="JUnit" />
+    <history-entry file="mismatchTest - 2019.11.03 at 16h 53m 49s.xml">
+      <configuration name="mismatchTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="trigLib_in_taylorTrig_main - 2019.11.03 at 00h 05m 29s.xml">
-      <configuration name="trigLib in taylorTrig_main" configurationId="JUnit" />
+    <history-entry file="mismatchTest_sinMismatch - 2019.11.03 at 16h 54m 25s.xml">
+      <configuration name="mismatchTest.sinMismatch" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="trigLib_in_taylorTrig_main - 2019.11.03 at 00h 06m 03s.xml">
-      <configuration name="trigLib in taylorTrig_main" configurationId="JUnit" />
+    <history-entry file="mismatchTest - 2019.11.03 at 16h 57m 02s.xml">
+      <configuration name="mismatchTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="trigLib_in_taylorTrig_main - 2019.11.03 at 00h 06m 54s.xml">
-      <configuration name="trigLib in taylorTrig_main" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CosTest - 2019.11.03 at 00h 08m 23s.xml">
-      <configuration name="CosTest" configurationId="JUnit" />
+    <history-entry file="mismatchTest - 2019.11.03 at 17h 01m 33s.xml">
+      <configuration name="mismatchTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26279318" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26545843" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
-      <window_info id="simpleUML" order="7" />
+      <window_info id="simpleUML" order="7" weight="0.32995737" />
       <window_info id="Learn" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37852496" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37852496" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -771,10 +795,48 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/TestSuite_1.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/trigLibTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/TestSuite_1.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/CotTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/CosTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/SecTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/CscTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/SinTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+        <state relative-caret-position="695">
+          <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/mismatchTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="50" lean-forward="true" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -783,58 +845,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/TanTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="33" column="19" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="425">
+          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/SecTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/TrigTypeMismatchException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+        <state relative-caret-position="102">
+          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/CscTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#130#131#0" expanded="true" />
+            <element signature="e#152#153#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/trigLib.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/CotTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/CosTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="374">
+          <caret line="32" column="78" lean-forward="true" selection-start-line="32" selection-start-column="78" selection-end-line="32" selection-end-column="78" />
         </state>
       </provider>
     </entry>
