@@ -29,16 +29,16 @@ public class CosTest {
     @Parameterized.Parameters
     public static Collection data(){
         return Arrays.asList(new Object[][] {
-            {0.0,1},
-            {30, 0.86602},
+            {0.0,1.0},
+            {30.0, 0.86602},
             {45.0, 0.70710},
-            {60,0.5},
-            {90.0, 0},
-            {120,-0.5},
-            {150,-0.86602},
-            {180,0},
-            {270,Double.NaN},
-            {360,0},
+            {60.0,0.5},
+            {90.0, 0.0},
+            {120.0,-0.5},
+            {150.0,-0.86602},
+            {180.0,0.0},
+            {270.0,Double.NaN},
+            {360.0,0.0},
             //TODO change this one later
                 {Double.POSITIVE_INFINITY, Double.NaN},
                 {Double.NEGATIVE_INFINITY, Double.NaN}
