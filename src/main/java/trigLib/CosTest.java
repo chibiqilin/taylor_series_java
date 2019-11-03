@@ -36,9 +36,9 @@ public class CosTest {
             {90.0, 0.0},
             {120.0,-0.5},
             {150.0,-0.86602},
-            {180.0,0.0},
-            {270.0,Double.NaN},
-            {360.0,0.0},
+            {180.0,-1.0},
+            {270.0,0.0},
+            {360.0,1.0},
             //TODO change this one later
                 {Double.POSITIVE_INFINITY, Double.NaN},
                 {Double.NEGATIVE_INFINITY, Double.NaN}
@@ -48,6 +48,8 @@ public class CosTest {
     @Test
     public void testCosTest(){
         System.out.println("Cos("+input+") = "+expected);
-        assertEquals(expected, trigLib.cos(input),0.00001);
+//        assertEquals(expected, trigLib.cos(input),0.00001);
+        //again roy secret test file , do not bother
+        assertEquals(expected, main.cos(input),0.00001);
     }
 }
