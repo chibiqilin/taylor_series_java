@@ -6,10 +6,6 @@ public class TrigIllegalArgumentException extends IllegalArgumentException {
     }
 
     public TrigIllegalArgumentException() {
-        super();
-    }
-
-    public TrigIllegalArgumentException(IllegalArgumentException ex) {
-        super(ex.getMessage());
+        super("Illegal Argument: Mismatched Data Type");
     }
 }
