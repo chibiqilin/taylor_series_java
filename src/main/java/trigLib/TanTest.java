@@ -1,6 +1,5 @@
 package trigLib;
 
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -22,33 +21,28 @@ public class TanTest {
         this.expected = expected;
     }
 
-    @Before
-    public void initialize(){
-        //before code
-    }
-
     @Parameterized.Parameters
-    public static Collection data(){
-        return Arrays.asList(new Object[][] {
+    public static Collection data() {
+        return Arrays.asList(new Object[][]{
                 {0.0, 0.0},
-                {30.0,0.57735},
-                {45.0,1.0},
-                {60.0,1.73205},
-                {90.0,Double.NaN},
-                {120.0,-1.73205},
-                {150.0,-0.57735},
-                {180.0,0.0},
-                {270.0,Double.NaN},
-                {360.0,0.0},
+                {30.0, 0.57735},
+                {45.0, 1.0},
+                {60.0, 1.73205},
+                {90.0, Double.NaN},
+                {120.0, -1.73205},
+                {150.0, -0.57735},
+                {180.0, 0.0},
+                {270.0, Double.NaN},
+                {360.0, 0.0},
                 {Double.POSITIVE_INFINITY, Double.NaN},
                 {Double.NEGATIVE_INFINITY, Double.NaN}
-        } );
+        });
     }
 
     @Test
-    public void testTanTest(){
-        System.out.println("Tan("+input+") = "+expected);
+    public void testTanTest() {
+        System.out.println("Tan(" + input + ") = " + expected);
         //test accuracy
-        assertEquals(expected, trigLib.tan(input),0.00001);
+        assertEquals(expected, trigLib.tan(input), 0.00001);
     }
 }

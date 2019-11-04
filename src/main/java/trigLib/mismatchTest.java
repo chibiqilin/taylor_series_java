@@ -1,78 +1,103 @@
 package trigLib;
 
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 
-import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.fail;
+import java.util.Arrays;
+import java.util.Collection;
 
+import static org.junit.Assert.assertEquals;
+
+@RunWith(Parameterized.class)
 public class mismatchTest {
-    private final String input = "stringInput";
+    private Object input;
+    private Double expected;
 
-    @Test
-    public void sinMismatch(){
+    public mismatchTest(Object input, Double expected) {
+        super();
+        this.input = input;
+        this.expected = expected;
+    }
+
+    @Parameterized.Parameters
+    public static Collection data() {
+        return Arrays.asList(new Object[][]{
+                {"aString", Double.NaN}
+        });
+    }
+
+
+    @Test(expected = TrigIllegalArgumentException.class)
+    public void sinMismatch() {
         try {
-            System.out.println("Try sin("+input+")");
-            trigLib.sin(input);
-            fail("Expected a TrigTypeMismatchException to be thrown");
-        } catch (TrigTypeMismatchException ex){
-            assertThat(ex.getMessage(), is("Error: Type Mismatch Exception"));
-            System.out.println(ex.getMessage());
+            System.out.println("sin(" + input + ") = " + expected);
+            trigLib.sin((Double) input);
+            assertEquals(expected, input);
+        } catch (Exception e) {
+            System.out.println("Mismatch: Throwing TrigIllegalArgumentException");
+            throw new TrigIllegalArgumentException("illegal argument");
         }
     }
-    @Test
-    public void cosMismatch(){
+
+    @Test(expected = TrigIllegalArgumentException.class)
+    public void cosMismatch() {
         try {
-            System.out.println("Try cos("+input+"):");
-            trigLib.cos(input);
-            fail("Expected a TrigTypeMismatchException to be thrown");
-        } catch (TrigTypeMismatchException ex){
-            assertThat(ex.getMessage(), is("Error: Type Mismatch Exception"));
-            System.out.println(ex.getMessage());
+            System.out.println("cos(" + input + ") = " + expected);
+            trigLib.cos((Double) input);
+            assertEquals(expected, input);
+        } catch (Exception e) {
+            System.out.println("Mismatch: Throwing TrigIllegalArgumentException");
+            throw new TrigIllegalArgumentException("illegal argument");
         }
     }
-    @Test
-    public void tanMismatch(){
+
+    @Test(expected = TrigIllegalArgumentException.class)
+    public void tanMismatch() {
         try {
-            System.out.println("Try tan("+input+"):");
-            trigLib.tan(input);
-            fail("Expected a TrigTypeMismatchException to be thrown");
-        } catch (TrigTypeMismatchException ex){
-            assertThat(ex.getMessage(), is("Error: Type Mismatch Exception"));
-            System.out.println(ex.getMessage());
+            System.out.println("tan(" + input + ") = " + expected);
+            trigLib.tan((Double) input);
+            assertEquals(expected, input);
+        } catch (Exception e) {
+            System.out.println("Mismatch: Throwing TrigIllegalArgumentException");
+            throw new TrigIllegalArgumentException("illegal argument");
         }
     }
-    @Test
-    public void secMismatch(){
+
+    @Test(expected = TrigIllegalArgumentException.class)
+    public void secMismatch() {
         try {
-            System.out.println("Try sec("+input+"):");
-            trigLib.sec(input);
-            fail("Expected a TrigTypeMismatchException to be thrown");
-        } catch (TrigTypeMismatchException ex){
-            assertThat(ex.getMessage(), is("Error: Type Mismatch Exception"));
-            System.out.println(ex.getMessage());
+            System.out.println("sec(" + input + ") = " + expected);
+            trigLib.sec((Double) input);
+            assertEquals(expected, input);
+        } catch (Exception e) {
+            System.out.println("Mismatch: Throwing TrigIllegalArgumentException");
+            throw new TrigIllegalArgumentException("illegal argument");
         }
     }
-    @Test
-    public void cscMismatch(){
+
+    @Test(expected = TrigIllegalArgumentException.class)
+    public void cscMismatch() {
         try {
-            System.out.println("Try csc("+input+"):");
-            trigLib.csc(input);
-            fail("Expected a TrigTypeMismatchException to be thrown");
-        } catch (TrigTypeMismatchException ex){
-            assertThat(ex.getMessage(), is("Error: Type Mismatch Exception"));
-            System.out.println(ex.getMessage());
+            System.out.println("csc(" + input + ") = " + expected);
+            trigLib.csc((Double) input);
+            assertEquals(expected, input);
+        } catch (Exception e) {
+            System.out.println("Mismatch: Throwing TrigIllegalArgumentException");
+            throw new TrigIllegalArgumentException("illegal argument");
         }
     }
-    @Test
-    public void cotMismatch(){
+
+    @Test(expected = TrigIllegalArgumentException.class)
+    public void cotMismatch() {
         try {
-            System.out.println("Try cot("+input+"):");
-            trigLib.cot(input);
-            fail("Expected a TrigTypeMismatchException to be thrown");
-        } catch (TrigTypeMismatchException ex){
-            assertThat(ex.getMessage(), is("Error: Type Mismatch Exception"));
-            System.out.println(ex.getMessage());
+            System.out.println("cot(" + input + ") = " + expected);
+            trigLib.cot((Double) input);
+            assertEquals(expected, input);
+        } catch (Exception e) {
+            System.out.println("Mismatch: Throwing TrigIllegalArgumentException");
+            throw new TrigIllegalArgumentException("illegal argument");
         }
     }
+
 }
