@@ -45,9 +45,9 @@ public class CotTest {
     @Test
     public void testCotTest() {
         System.out.println("Cot(" + input + ") = " + expected);
-//        assertEquals(expected, trigLib.cot(input), 0.00001);
+        assertEquals(expected, trigLib.cot(input), 0.00001);
         
         
-        assertEquals(expected, main.cot(input), 0.00001);
+//        assertEquals(expected, main.cot(input), 0.00001);
     }
 }
