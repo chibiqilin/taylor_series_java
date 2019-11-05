@@ -28,17 +28,27 @@ public abstract class trigLib {
 
 	}	
 
+
 	/*
 	 * tan function
 	 */
 	public static double tan(double target) {
-		double value = sin(target) / cos(target);
+		double numerator = sin(target);
+		double denominator = cos(target);
 		
+		double value = numerator/denominator;
+		if (denominator<= 0.00001 && denominator >0.0 )
+			return value=Double.NaN;
+		else if( denominator>= -0.00001 && denominator <0.0){
+			System.out.println("warning it is works");
+			return value=Double.NaN;
+		}
 		
 		return value;
 		
 
 	}
+
 
     public static Double sec(Double degrees) {
         return null;
