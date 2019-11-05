@@ -34,7 +34,7 @@ public class CotTest {
                 {150.0, -1.73205},
                 //be careful with this test!
                 {180.0, Double.NaN},
-                {270.0, Double.NaN},
+                {270.0, 0},
                 //TODO shit happened at here!!!!!!!! level max warning
                 {360.0, Double.NaN},
                 {Double.POSITIVE_INFINITY, Double.NaN},
@@ -45,6 +45,9 @@ public class CotTest {
     @Test
     public void testCotTest() {
         System.out.println("Cot(" + input + ") = " + expected);
-        assertEquals(expected, trigLib.cot(input), 0.00001);
+//        assertEquals(expected, trigLib.cot(input), 0.00001);
+        
+        
+        assertEquals(expected, main.cot(input), 0.00001);
     }
 }
