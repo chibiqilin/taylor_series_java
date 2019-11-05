@@ -34,7 +34,7 @@ public class CotTest {
                 {150.0, -1.73205},
                 //be careful with this test!
                 {180.0, Double.NaN},
-                {270.0, 0},
+                {270.0, 0.0},
                 //TODO shit happened at here!!!!!!!! level max warning
                 {360.0, Double.NaN},
                 {Double.POSITIVE_INFINITY, Double.NaN},
