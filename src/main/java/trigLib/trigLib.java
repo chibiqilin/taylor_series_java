@@ -40,7 +40,6 @@ public abstract class trigLib {
 		if (denominator<= 0.00001 && denominator >0.0 )
 			return value=Double.NaN;
 		else if( denominator>= -0.00001 && denominator <0.0){
-			System.out.println("warning it is works");
 			return value=Double.NaN;
 		}
 		
@@ -58,9 +57,26 @@ public abstract class trigLib {
         return null;
     }
 
-    public static Double cot(Double degrees) {
-        return null;
-    }
+	/*
+	 * cotan function
+	 */
+	public static double cot(double target) {
+		double numerator = cos(target);
+		double denominator = sin(target);
+		
+		double value = numerator/denominator;
+		if (denominator<= 0.00001 && denominator >0.0 )
+			return value=Double.NaN;
+		else if( denominator>= -0.00001 && denominator <0.0){
+			return value=Double.NaN;
+		}else if( denominator ==0){
+			return value=Double.NaN;
+		}else if ( denominator == Double.NaN){
+			return value=Double.NaN;
+		}
+		
+		return value;
+	}
 
     /*
      * Same as math.pow(), do the exponent of a base
