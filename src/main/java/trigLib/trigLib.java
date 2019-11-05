@@ -1,7 +1,7 @@
 package trigLib;
 
 public abstract class trigLib {
-
+	static double PI = 3.14159265;
 	/*
 	 * cosine function
 	 */
@@ -11,7 +11,7 @@ public abstract class trigLib {
 		// change it later
 
 		// TODO: use value to isntaed of PI
-		double rad = target * 1. / 180. * Math.PI;
+		double rad = target * 1. / 180. * PI;
 		// the first element of the taylor series
 		double sum = 1.0;
 
@@ -28,9 +28,17 @@ public abstract class trigLib {
 
 	}	
 
-    public static Double tan(Double degrees) {
-        return null;
-    }
+	/*
+	 * tan function
+	 */
+	public static double tan(double target) {
+		double value = sin(target) / cos(target);
+		
+		
+		return value;
+		
+
+	}
 
     public static Double sec(Double degrees) {
         return null;
@@ -108,7 +116,7 @@ public abstract class trigLib {
         // change it later
 
         // TODO: use value to instead of PI
-        double rad = target * 1. / 180. * Math.PI;
+        double rad = target * 1. / 180. * PI;
         // the first element of the taylor series
         double sum = rad;
 
