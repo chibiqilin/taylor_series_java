@@ -28,12 +28,13 @@ public class CscTest {
                 {0.0, Double.NaN},
                 {30.0, 2.0},
                 {45.0, 1.41421},
-                {60, 1.1547005},
+                {60.0, 1.15470},
+                   
                 {90.0, 1.0},
                 {120.0, 1.15470},
                 {150.0, 2.0},
                 //be careful with this test!
-                {180, Double.NaN},
+                {180.0, Double.NaN},
                 {270.0, -1.0},
                 //TODO shit happened at here!!!!!!!! level max warning
                 {360.0, Double.NaN},
