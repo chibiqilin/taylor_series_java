@@ -1,7 +1,10 @@
 package trigLib;
 
 public abstract class trigLib {
+	
+	//value of pi
 	static double PI = 3.14159265;
+	
 	/*
 	 * cosine function
 	 */
@@ -10,7 +13,6 @@ public abstract class trigLib {
 
 		// change it later
 
-		// TODO: use value to isntaed of PI
 		double rad = target * 1. / 180. * PI;
 		// the first element of the taylor series
 		double sum = 1.0;
@@ -115,45 +117,21 @@ public abstract class trigLib {
     /*
      * Same as math.pow(), do the exponent of a base
      */
-    private static double power(double base, int exponent) {
-        // all the number's power 0 is one except 0.
+	private static double power(double base, int exponent) {
         double result = 1.0;
-        // 0 power anything is 0
         if (base == 0)
             return 0.0;
-        // negative power
-        boolean isNegative = false;
+        boolean isNegetive = false;
         if (exponent < 0) {
-            isNegative = true;
+            isNegetive = true;
             exponent = -exponent;
         }
-        result = getTheResult(base, exponent);
-        if (isNegative)
-            return 1 / result;
-        return result;
-    }
-
-    /*
-     * power method deal with negative value
-     */
-    private static double getTheResult(double base, int exponent) {
-        // if power is 0, return 1
-        if (exponent == 0) {
-            return 1;
-        }
-        // if power is 1 return base
-        if (exponent == 1) {
-            return base;
-        }
-
-        double result = getTheResult(base, exponent >> 1);
-
-        result *= result;
-        if ((exponent & 0x1) == 1) {
+        for (int i = 0; i < exponent; i++) {
             result *= base;
         }
+        if (isNegetive)
+            return 1 / result;
         return result;
-
     }
 
     /*
