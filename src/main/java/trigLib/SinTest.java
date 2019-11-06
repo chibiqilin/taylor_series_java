@@ -48,8 +48,6 @@ public class SinTest {
         //test 5 decimal accuracy
         assertEquals(expected, trigLib.sin(input), 0.00001);
 
-        //roy secret test case don't use, don't bother
-        //assertEquals(expected, main.sin(input),0.00001);
     }
 }
 

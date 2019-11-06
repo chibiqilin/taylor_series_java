@@ -48,6 +48,5 @@ public class CotTest {
         assertEquals(expected, trigLib.cot(input), 0.00001);
         
         
-//        assertEquals(expected, main.cot(input), 0.00001);
     }
 }
