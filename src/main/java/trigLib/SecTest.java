@@ -28,7 +28,7 @@ public class SecTest {
                 {30.0, 1.15470},
                 {45.0, 1.41421},
                 {60.0, 2.0},
-                {90.0, Double.POSITIVE_INFINITY},
+                {90.0, Double.NaN},
                 {120.0, -2.0},
                 {150.0, -1.15470},
                 {180.0, -1.0},
@@ -44,6 +44,8 @@ public class SecTest {
     @Test
     public void testSecTest() {
         System.out.println("Sec(" + input + ") = " + expected);
-        assertEquals(expected, trigLib.sec(input), 0.00001);
+//        assertEquals(expected, trigLib.sec(input), 0.00001);
+        
+        assertEquals(expected, main.sec(input), 0.00001);
     }
 }
