@@ -60,7 +60,6 @@ public abstract class trigLib {
 		if (denominator<= 0.00001 && denominator >0.0 )
 			return value=Double.NaN;
 		else if( denominator>= -0.00001 && denominator <0.0){
-			System.out.println("warning it is works");
 			return value=Double.NaN;
 		}else if( denominator ==0){
 			return value=Double.NaN;
@@ -71,9 +70,26 @@ public abstract class trigLib {
 		return value;
 	}
 
-    public static Double csc(Double degrees) {
-        return null;
-    }
+	/*
+	 * csc function
+	 */
+	public static double csc(double target) {
+		double numerator = 1;
+		double denominator = sin(target);
+		
+		double value = numerator/denominator;
+		if (denominator<= 0.00001 && denominator >0.0 )
+			return value=Double.NaN;
+		else if( denominator>= -0.00001 && denominator <0.0){
+			return value=Double.NaN;
+		}else if( denominator ==0){
+			return value=Double.NaN;
+		}else if ( denominator == Double.NaN){
+			return value=Double.NaN;
+		}
+		
+		return value;
+	}
 
 	/*
 	 * cotan function
