@@ -37,13 +37,16 @@ public abstract class trigLib {
 	public static double tan(double target) {
 		double numerator = sin(target);
 		double denominator = cos(target);
-		
+
 		double value = numerator/denominator;
+		/*
 		if (denominator<= 0.00001 && denominator >0.0 )
-			return value=Double.NaN;
+			return Double.NaN;
 		else if( denominator>= -0.00001 && denominator <0.0){
-			return value=Double.NaN;
+			return Double.NaN;
 		}
+		*/
+		if (denomIsZero(denominator)) return Double.NaN;
 		
 		return value;
 		
@@ -57,18 +60,20 @@ public abstract class trigLib {
 	public static double sec(double target) {
 		double numerator = 1;
 		double denominator = cos(target);
-		
+
 		double value = numerator/denominator;
+		/*
 		if (denominator<= 0.00001 && denominator >0.0 )
-			return value=Double.NaN;
+			return Double.NaN;
 		else if( denominator>= -0.00001 && denominator <0.0){
-			return value=Double.NaN;
+			return Double.NaN;
 		}else if( denominator ==0){
-			return value=Double.NaN;
+			return Double.NaN;
 		}else if ( denominator == Double.NaN){
-			return value=Double.NaN;
+			return Double.NaN;
 		}
-		
+		*/
+		if (denomIsZero(denominator)) return Double.NaN;
 		return value;
 	}
 
@@ -80,17 +85,24 @@ public abstract class trigLib {
 		double denominator = sin(target);
 		
 		double value = numerator/denominator;
+		/*
 		if (denominator<= 0.00001 && denominator >0.0 )
-			return value=Double.NaN;
+			return Double.NaN;
 		else if( denominator>= -0.00001 && denominator <0.0){
-			return value=Double.NaN;
+			return Double.NaN;
 		}else if( denominator ==0){
-			return value=Double.NaN;
+			return Double.NaN;
 		}else if ( denominator == Double.NaN){
-			return value=Double.NaN;
+			return Double.NaN;
 		}
-		
+		*/
+		if (denomIsZero(denominator)) return Double.NaN;
 		return value;
+	}
+
+	private static boolean denomIsZero(double denominator) {
+		Double absDenominator = (denominator < 0) ? -denominator:denominator;
+		return (absDenominator < 0.00001) ? true:false;
 	}
 
 	/*
@@ -101,15 +113,19 @@ public abstract class trigLib {
 		double denominator = sin(target);
 		
 		double value = numerator/denominator;
+
+		/*
 		if (denominator<= 0.00001 && denominator >0.0 )
-			return value=Double.NaN;
+			return Double.NaN;
 		else if( denominator>= -0.00001 && denominator <0.0){
-			return value=Double.NaN;
+			return Double.NaN;
 		}else if( denominator ==0){
-			return value=Double.NaN;
+			return Double.NaN;
 		}else if ( denominator == Double.NaN){
-			return value=Double.NaN;
+			return Double.NaN;
 		}
+		*/
+		if (denomIsZero(denominator)) return Double.NaN;
 		
 		return value;
 	}
@@ -121,15 +137,15 @@ public abstract class trigLib {
         double result = 1.0;
         if (base == 0)
             return 0.0;
-        boolean isNegetive = false;
+        boolean isNegative = false;
         if (exponent < 0) {
-            isNegetive = true;
+            isNegative = true;
             exponent = -exponent;
         }
         for (int i = 0; i < exponent; i++) {
             result *= base;
         }
-        if (isNegetive)
+        if (isNegative)
             return 1 / result;
         return result;
     }
