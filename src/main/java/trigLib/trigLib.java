@@ -1,139 +1,115 @@
 package trigLib;
 
 public abstract class trigLib {
-	
-	//value of pi
-	static double PI = 3.14159265;
-	
+
+    //value of pi
+    static double PI = 3.14159265;
+
 	/*
-	 * cosine function
+	 * sine function
 	 */
-	public static double cos(double target) {
+	public static double sin(double target) {
 		// angle to radians
 
 		// change it later
 
+		// TODO: use value to instead of PI
 		double rad = target * 1. / 180. * PI;
 		// the first element of the taylor series
-		double sum = 1.0;
+		double sum = rad;
 
 		// add them up until a certain precision (eg. 10)
-		for (int i = 1; i <= 14; i++) {
+		for (int i = 1; i <= 11; i++) {
 			if (i % 2 == 0)
 
-				sum += power(rad, 2 * i) / factorial(2 * i );
+				sum += power(rad, 2 * i + 1) / factorial(2 * i + 1);
 			else
-				sum -= power(rad, 2 * i) / factorial(2 * i );
+				sum -= power(rad, 2 * i + 1) / factorial(2 * i + 1);
 		}
 
 		return sum;
 
-	}	
-
-
-	/*
-	 * tan function
-	 */
-	public static double tan(double target) {
-		double numerator = sin(target);
-		double denominator = cos(target);
-
-		double value = numerator/denominator;
-		/*
-		if (denominator<= 0.00001 && denominator >0.0 )
-			return Double.NaN;
-		else if( denominator>= -0.00001 && denominator <0.0){
-			return Double.NaN;
-		}
-		*/
-		if (denomIsZero(denominator)) return Double.NaN;
-		
-		return value;
-		
-
 	}
 
+    /*
+     * cosine function
+     */
+    public static double cos(double target) {
+        // angle to radians
 
-	/*
-	 * sec function
-	 */
-	public static double sec(double target) {
-		double numerator = 1;
-		double denominator = cos(target);
+        // change it later
 
-		double value = numerator/denominator;
-		/*
-		if (denominator<= 0.00001 && denominator >0.0 )
-			return Double.NaN;
-		else if( denominator>= -0.00001 && denominator <0.0){
-			return Double.NaN;
-		}else if( denominator ==0){
-			return Double.NaN;
-		}else if ( denominator == Double.NaN){
-			return Double.NaN;
-		}
-		*/
+        double rad = target * 1. / 180. * PI;
+        // the first element of the taylor series
+        double sum = 1.0;
+
+        // add them up until a certain precision (eg. 10)
+        for (int i = 1; i <= 14; i++) {
+            if (i % 2 == 0)
+                sum += power(rad, 2 * i) / factorial(2 * i);
+            else
+                sum -= power(rad, 2 * i) / factorial(2 * i);
+        }
+        return sum;
+    }
+
+    /*
+     * tan function
+     */
+    public static double tan(double target) {
+        double numerator = sin(target);
+        double denominator = cos(target);
+
+        if (denomIsZero(denominator)) return Double.NaN;
+		double value = numerator / denominator;
+        return value;
+    }
+
+    /*
+     * sec function
+     */
+    public static double sec(double target) {
+        double numerator = 1;
+        double denominator = cos(target);
+
+        if (denomIsZero(denominator)) return Double.NaN;
+        double value = numerator / denominator;
+        return value;
+    }
+
+    /*
+     * csc function
+     */
+    public static double csc(double target) {
+        double numerator = 1;
+        double denominator = sin(target);
+
 		if (denomIsZero(denominator)) return Double.NaN;
-		return value;
-	}
+        double value = numerator / denominator;
+        return value;
+    }
 
-	/*
-	 * csc function
-	 */
-	public static double csc(double target) {
-		double numerator = 1;
-		double denominator = sin(target);
-		
-		double value = numerator/denominator;
-		/*
-		if (denominator<= 0.00001 && denominator >0.0 )
-			return Double.NaN;
-		else if( denominator>= -0.00001 && denominator <0.0){
-			return Double.NaN;
-		}else if( denominator ==0){
-			return Double.NaN;
-		}else if ( denominator == Double.NaN){
-			return Double.NaN;
-		}
-		*/
+    /*
+     * cotan function
+     */
+    public static double cot(double target) {
+        double numerator = cos(target);
+        double denominator = sin(target);
+
 		if (denomIsZero(denominator)) return Double.NaN;
-		return value;
-	}
+        double value = numerator / denominator;
+        return value;
+    }
 
 	private static boolean denomIsZero(double denominator) {
-		Double absDenominator = (denominator < 0) ? -denominator:denominator;
-		return (absDenominator < 0.00001) ? true:false;
-	}
-
-	/*
-	 * cotan function
-	 */
-	public static double cot(double target) {
-		double numerator = cos(target);
-		double denominator = sin(target);
-		
-		double value = numerator/denominator;
-
-		/*
-		if (denominator<= 0.00001 && denominator >0.0 )
-			return Double.NaN;
-		else if( denominator>= -0.00001 && denominator <0.0){
-			return Double.NaN;
-		}else if( denominator ==0){
-			return Double.NaN;
-		}else if ( denominator == Double.NaN){
-			return Double.NaN;
-		}
-		*/
-		if (denomIsZero(denominator)) return Double.NaN;
-		
-		return value;
+		Double absDenominator = (denominator < 0) ? -denominator : denominator;
+		return (absDenominator < 0.00001) ? true : false;
 	}
 
     /*
      * Same as math.pow(), do the exponent of a base
      */
-	private static double power(double base, int exponent) {
+    private static double power(double base, int exponent) {
         double result = 1.0;
         if (base == 0)
             return 0.0;
@@ -159,34 +135,6 @@ public abstract class trigLib {
         else
             return n * factorial(n - 1);
     }
-
-
-    /*
-     * sine function
-     */
-    public static double sin(double target) {
-        // angle to radians
-
-        // change it later
-
-        // TODO: use value to instead of PI
-        double rad = target * 1. / 180. * PI;
-        // the first element of the taylor series
-        double sum = rad;
-
-        // add them up until a certain precision (eg. 10)
-        for (int i = 1; i <= 11; i++) {
-            if (i % 2 == 0)
-
-                sum += power(rad, 2 * i + 1) / factorial(2 * i + 1);
-            else
-                sum -= power(rad, 2 * i + 1) / factorial(2 * i + 1);
-        }
-
-        return sum;
-
-    }
-
 
     public static Double sin(int degrees) {
         return sin(new Double(degrees));
