@@ -1,4 +1,4 @@
-# taylor_series_java
+# TrigLib Ver. 4.0
 This repository stores the submission material for an academic assignment. The purpose of the assignment is to create a Java Library implementing standard trigonometric functions in order to test using JUnit Testing.
 
 ----
@@ -42,14 +42,3 @@ Implementation of these trigonometric functions will be done using Taylor Series
 JUnit testing will be used to ensure that functions are fully functional in all four quadrants. An exception must be thrown for invalid usage. For example, attempting to perform Tan(90) should throw an error of NaN as the output value is undefined.
 
 A test suite will be integral to this assignment as it will help perform tests on all functions for extreme cases where errors can be expected.
-
-----
-
-## Notes
-
-11/1/2019 - Repository created
-
-## to do
-J unit test file
-
-Method(not implement)
