@@ -26,17 +26,18 @@ public class CotTest {
         return Arrays.asList(new Object[][]{
                 //TODO double check this one later
                 {0.0, Double.NaN},
-                {30.0, 1.73205},
+                {30.0, 1.732050},
                 {45.0, 1.0},
-                {60.0, 0.57735},
+                {60.0, 0.577350},
                 {90.0, 0.0},
-                {120.0, -0.57735},
-                {150.0, -1.73205},
-                //be careful with this test!
+                {120.0, -0.577350},
+                {150.0, -1.732050},
                 {180.0, Double.NaN},
                 {270.0, 0.0},
-                //TODO shit happened at here!!!!!!!! level max warning
                 {360.0, Double.NaN},
+                {999.0,-0.158384},
+                {-155.0,2.1445067},
+                {-999.0,0.158384},
                 {Double.POSITIVE_INFINITY, Double.NaN},
                 {Double.NEGATIVE_INFINITY, Double.NaN}
         });
@@ -45,7 +46,7 @@ public class CotTest {
     @Test
     public void testCotTest() {
         System.out.println("Cot(" + input + ") = " + expected);
-        assertEquals(expected, trigLib.cot(input), 0.00001);
+        assertEquals(expected, trigLib.cot(input), 0.000001);
         
         
     }

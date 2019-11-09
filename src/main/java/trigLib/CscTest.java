@@ -27,18 +27,18 @@ public class CscTest {
                 //TODO double check this one later
                 {0.0, Double.NaN},
                 {30.0, 2.0},
-                {45.0, 1.41421},
-                {60.0, 1.15470},
+                {45.0, 1.414213},
+                {60.0, 1.154700},
                    
                 {90.0, 1.0},
-                {120.0, 1.15470},
+                {120.0, 1.154700},
                 {150.0, 2.0},
-                //be careful with this test!
                 {180.0, Double.NaN},
                 {270.0, -1.0},
-                //TODO shit happened at here!!!!!!!! level max warning
                 {360.0, Double.NaN},
-                //TODO FIX THE INFINITY VALUE?
+                {999.0,-1.012465},
+                {-155.0,-2.366201},
+                {-999.0,1.012465},
                 {Double.POSITIVE_INFINITY, Double.NaN},
                 {Double.NEGATIVE_INFINITY, Double.NaN}
         });
@@ -47,6 +47,6 @@ public class CscTest {
     @Test
     public void testCscTest() {
         System.out.println("Csc(" + input + ") = " + expected);
-        assertEquals(expected, trigLib.csc(input), 0.00001);
+        assertEquals(expected, trigLib.csc(input), 0.000001);
     }
 }

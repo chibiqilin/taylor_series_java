@@ -25,16 +25,18 @@ public class CosTest {
     public static Collection data() {
         return Arrays.asList(new Object[][]{
                 {0.0, 1.0},
-                {30.0, 0.86602},
-                {45.0, 0.70710},
+                {30.0, 0.866025},
+                {45.0, 0.707106},
                 {60.0, 0.5},
                 {90.0, 0.0},
                 {120.0, -0.5},
-                {150.0, -0.86602},
+                {150.0, -0.866025},
                 {180.0, -1.0},
                 {270.0, 0.0},
                 {360.0, 1.0},
-                //TODO change this one later
+                {999.0,0.156434},
+                {-155.0,-0.906307},
+                {-999.0,0.156434},
                 {Double.POSITIVE_INFINITY, Double.NaN},
                 {Double.NEGATIVE_INFINITY, Double.NaN}
         });
@@ -43,6 +45,6 @@ public class CosTest {
     @Test
     public void testCosTest() {
         System.out.println("Cos(" + input + ") = " + expected);
-        assertEquals(expected, trigLib.cos(input), 0.00001);
+        assertEquals(expected, trigLib.cos(input), 0.000001);
     }
 }

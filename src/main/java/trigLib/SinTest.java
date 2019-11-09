@@ -35,10 +35,12 @@ public class SinTest {
                 {180.0, 0.0},
                 {270.0, -1.0},
                 {360.0, 0.0},
+                {999.0,-0.987688},
+                {-155.0,-0.42261},
+                {-999.0,0.987688},
                 //TODO FIX THE INFINITY VALUE?
                 {Double.POSITIVE_INFINITY, Double.NaN},
                 {Double.NEGATIVE_INFINITY, Double.NaN}
-                //TODO: make catch the error input
         });
     }
 

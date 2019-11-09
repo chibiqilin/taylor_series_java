@@ -25,16 +25,19 @@ public class SecTest {
     public static Collection data() {
         return Arrays.asList(new Object[][]{
                 {0.0, 1.0},
-                {30.0, 1.15470},
-                {45.0, 1.41421},
+                {30.0, 1.154700},
+                {45.0, 1.414213},
                 {60.0, 2.0},
                 {90.0, Double.NaN},
                 {120.0, -2.0},
-                {150.0, -1.15470},
+                {150.0, -1.154700},
+                {999.0,  6.392453},
                 {180.0, -1.0},
-                //be careful with this test!
                 {270.0, Double.NaN},
                 {360.0, 1.0},
+                {999.0,6.392453},
+                {-155.0,-1.103377},
+                {-999.0,6.3924535},
                 //TODO FIX THE INFINITY VALUE?
                 {Double.POSITIVE_INFINITY, Double.NaN},
                 {Double.NEGATIVE_INFINITY, Double.NaN}
@@ -44,7 +47,7 @@ public class SecTest {
     @Test
     public void testSecTest() {
         System.out.println("Sec(" + input + ") = " + expected);
-        assertEquals(expected, trigLib.sec(input), 0.00001);
+        assertEquals(expected, trigLib.sec(input), 0.000001);
         
     }
 }

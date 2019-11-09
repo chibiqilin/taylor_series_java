@@ -34,6 +34,9 @@ public class TanTest {
                 {180.0, 0.0},
                 {270.0, Double.NaN},
                 {360.0, 0.0},
+                {999.0,-6.313751},
+                {-155.0,0.466307},
+                {-999.0,6.313751},
                 {Double.POSITIVE_INFINITY, Double.NaN},
                 {Double.NEGATIVE_INFINITY, Double.NaN}
         });
