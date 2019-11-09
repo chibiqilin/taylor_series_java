@@ -5,6 +5,25 @@ public abstract class trigLib {
     //value of pi
     static double PI = 3.14159265;
 
+    
+    /*
+     * Change degree to radius
+     */
+    public static double degreeToRadius(double input){
+    	double rad = input * 1. / 180. * PI;
+    	return rad;
+    	
+    }
+    
+    /*
+     * Change radius to degree
+     */
+    public static double radiusToDegree(double input){
+    	double degree = input * 180 / PI;
+    	return degree;
+    }
+    
+    
 	/*
 	 * sine function
 	 */
