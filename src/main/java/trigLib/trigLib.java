@@ -1,182 +1,234 @@
 package trigLib;
 
-/*
- * all the trig method require to use degree input,
- * if you want to change degree to the radian you could use degreeToRadian() method
- * Or if you want to change Radian back to degree, you can use radianToDegree() method 
+/**
+ * TrigLib is a library which provides methods for performing trigonometric functions.
+ * Trigonometric functions is performed using Taylor series expansion, accurate to at least
+ * 6 decimal places within JUnit assert testing.
+ * Methods include sin, cos, tan, sec, csc, cot.
+ * Additionally, a method is provided to convert degrees to radians: degreeToRadian(),
+ * as well as a method to convert radians back to degrees, you can use radianToDegree().
+ *
+ * @author Andrew Vu (6044937), GeZhang Zhu (5921648)
+ * @version 4.0
  */
-public abstract class trigLib {
+public abstract class TrigLib {
 
-	// value of pi
-	static double PI = 3.14159265;
+    static double PI = 3.14159265; // Value of PI
 
-	/*
-	 * Change degree to radian
-	 */
-	public static double degreeToRadian(double input) {
-		double rad = input * 1. / 180. * PI;
-		return rad;
+    /**
+     * Change degrees to radians
+     * @param input value in degrees
+     * @return value in radians
+     */
+    public static double degreeToRadian(double input) {
+        double rad = input * 1. / 180. * PI;
+        return rad;
 
-	}
+    }
 
-	/*
-	 * Change radian to degree
-	 */
-	public static double radianToDegree(double input) {
-		double degree = input * 180 / PI;
-		return degree;
-	}
+    /**
+     * Change radians to degrees
+     * @param input value in radians
+     * @return value in degrees
+     */
+    public static double radianToDegree(double input) {
+        double degree = input * 180 / PI;
+        return degree;
+    }
 
-	/*
-	 * sine function
-	 */
-	public static double sin(double target) {
+    /**
+     * Sine function
+     * @param degree input value in degrees
+     * @return Output of sin(degree) function
+     */
+    public static double sin(double degree) {
 
-		double rad = (target * 1. / 180. * PI) % (2 * PI);
+        double rad = (degree * 1. / 180. * PI) % (2 * PI);
 
-		// the first element of the taylor series
-		double sum = rad;
+        // the first element of the taylor series
+        double sum = rad;
 
-		// add them up until a certain precision (eg. 10)
-		for (int i = 1; i <= 11; i++) {
-			if (i % 2 == 0)
-				sum += power(rad, 2 * i + 1) / factorial(2 * i + 1);
-			else
-				sum -= power(rad, 2 * i + 1) / factorial(2 * i + 1);
-		}
-		return sum;
+        // add them up until a certain precision (eg. 10)
+        for (int i = 1; i <= 11; i++) {
+            if (i % 2 == 0)
+                sum += power(rad, 2 * i + 1) / factorial(2 * i + 1);
+            else
+                sum -= power(rad, 2 * i + 1) / factorial(2 * i + 1);
+        }
+        return sum;
 
-	}
+    }
 
-	/*
-	 * cosine function
-	 */
-	public static double cos(double target) {
+    /**
+     * Cosine function
+     * @param degree input value in degrees
+     * @return Output of cos(degree) function
+     */
+    public static double cos(double degree) {
 
-		double rad = (target * 1. / 180. * PI) % (2 * PI);
+        double rad = (degree * 1. / 180. * PI) % (2 * PI);
 
-		// the first element of the taylor series
-		double sum = 1.0;
+        // the first element of the taylor series
+        double sum = 1.0;
 
-		// add them up until a certain precision (eg. 10)
-		for (int i = 1; i <= 14; i++) {
-			if (i % 2 == 0)
-				sum += power(rad, 2 * i) / factorial(2 * i);
-			else
-				sum -= power(rad, 2 * i) / factorial(2 * i);
-		}
-		return sum;
-	}
+        // add them up until a certain precision (eg. 10)
+        for (int i = 1; i <= 14; i++) {
+            if (i % 2 == 0)
+                sum += power(rad, 2 * i) / factorial(2 * i);
+            else
+                sum -= power(rad, 2 * i) / factorial(2 * i);
+        }
+        return sum;
+    }
 
-	/*
-	 * tan function
-	 */
-	public static double tan(double target) {
-		double numerator = sin(target);
-		double denominator = cos(target);
+    /**
+     * Tangent function
+     * @param degree input value in degrees
+     * @return Output of tan(degree) function
+     */
+    public static double tan(double degree) {
+        double numerator = sin(degree);
+        double denominator = cos(degree);
 
-		if (denomIsZero(denominator))
-			return Double.NaN;
-		double value = numerator / denominator;
-		return value;
-	}
+        try {
+            if (denomIsZero(denominator)) throw new UndefinedException();
+        } catch (UndefinedException e) {
+            System.out.println(e.getMessage());
+            return Double.NaN;
+        }
 
-	/*
-	 * sec function
-	 */
-	public static double sec(double target) {
-		double numerator = 1;
-		double denominator = cos(target);
+        double value = numerator / denominator;
+        return value;
+    }
 
-		if (denomIsZero(denominator))
-			return Double.NaN;
-		double value = numerator / denominator;
-		return value;
-	}
+    /**
+     * Secant function
+     * @param degree input value in degrees
+     * @return Output of sec(degree) function
+     */
+    public static double sec(double degree) {
+        double numerator = 1;
+        double denominator = cos(degree);
 
-	/*
-	 * csc function
-	 */
-	public static double csc(double target) {
-		double numerator = 1;
-		double denominator = sin(target);
+        try {
+            if (denomIsZero(denominator)) throw new UndefinedException();
+        } catch (UndefinedException e) {
+            System.out.println(e.getMessage());
+            return Double.NaN;
+        }
 
-		if (denomIsZero(denominator))
-			return Double.NaN;
-		double value = numerator / denominator;
-		return value;
-	}
+        double value = numerator / denominator;
+        return value;
+    }
 
-	/*
-	 * cotan function
-	 */
-	public static double cot(double target) {
-		double numerator = cos(target);
-		double denominator = sin(target);
+    /**
+     * Cosecant function
+     * @param degree input value in degrees
+     * @return Output of csc(degree) function
+     */
+    public static double csc(double degree) {
+        double numerator = 1;
+        double denominator = sin(degree);
 
-		if (denomIsZero(denominator))
-			return Double.NaN;
-		double value = numerator / denominator;
-		return value;
-	}
+        try {
+            if (denomIsZero(denominator)) throw new UndefinedException();
+        } catch (UndefinedException e) {
+            System.out.println(e.getMessage());
+            return Double.NaN;
+        }
 
-	private static boolean denomIsZero(double denominator) {
-		Double absDenominator = (denominator < 0) ? -denominator : denominator;
-		return (absDenominator < 0.00001) ? true : false;
-	}
+        double value = numerator / denominator;
+        return value;
+    }
 
-	/*
-	 * Same as math.pow(), do the exponent of a base
-	 */
-	private static double power(double base, int exponent) {
-		double result = 1.0;
-		if (base == 0)
-			return 0.0;
-		boolean isNegative = false;
-		if (exponent < 0) {
-			isNegative = true;
-			exponent = -exponent;
-		}
-		for (int i = 0; i < exponent; i++) {
-			result *= base;
-		}
-		if (isNegative)
-			return 1 / result;
-		return result;
-	}
+    /**
+     * Cotangent function
+     * @param degree input value in degrees
+     * @return Output of cot(degree) function
+     */
+    public static double cot(double degree) {
+        double numerator = cos(degree);
+        double denominator = sin(degree);
 
-	/*
-	 * factorial recursive function for taylor expend
-	 */
-	public static double factorial(double n) {
-		if (n <= 1) // base case
-			return 1;
-		else
-			return n * factorial(n - 1);
-	}
+        try {
+            if (denomIsZero(denominator)) throw new UndefinedException();
+        } catch (UndefinedException e) {
+            System.out.println(e.getMessage());
+            return Double.NaN;
+        }
 
-	public static Double sin(int degrees) {
-		return sin(new Double(degrees));
-	}
+        double value = numerator / denominator;
+        return value;
+    }
 
-	public static Double cos(int degrees) {
-		return cos(new Double(degrees));
-	}
+    /**
+     * Check if denominator of an equation is zero, within a certain level of precision.
+     * @param denominator input value for use as a denominator
+     * @return true if close enough to zero within 6 decimal places, false otherwise.
+     */
+    private static boolean denomIsZero(double denominator) {
+        Double absDenominator = (denominator < 0) ? -denominator : denominator;
+        return (absDenominator < 0.000001) ? true : false;
+    }
 
-	public static Double tan(int degrees) {
-		return tan(new Double(degrees));
-	}
+    /**
+     * Power method limited to only raising the base to the exponent of an integer
+     * @param base Base value in double
+     * @param exponent Exponent value in Int
+     * @return returns the base raised to the exponent
+     */
+    private static double power(double base, int exponent) {
+        double result = 1.0;
+        if (base == 0)
+            return 0.0;
+        boolean isNegative = false;
+        if (exponent < 0) {
+            isNegative = true;
+            exponent = -exponent;
+        }
+        for (int i = 0; i < exponent; i++) {
+            result *= base;
+        }
+        if (isNegative)
+            return 1 / result;
+        return result;
+    }
 
-	public static Double sec(int degrees) {
-		return sec(new Double(degrees));
-	}
+    /**
+     * Recursive function for calculating Factorial used for Taylor expansion
+     * @param n input n factorial
+     * @return returns n! through recursion until base case (1) is reached
+     */
+    public static double factorial(double n) {
+        if (n <= 1) // base case
+            return 1;
+        else
+            return n * factorial(n - 1);
+    }
 
-	public static Double csc(int degrees) {
-		return csc(new Double(degrees));
-	}
+    // Methods for sin, cos, tan, sec, csc, cot to accept integer values
+    public static Double sin(int degrees) {
+        return sin(new Double(degrees));
+    }
 
-	public static Double cot(int degrees) {
-		return cot(new Double(degrees));
-	}
+    public static Double cos(int degrees) {
+        return cos(new Double(degrees));
+    }
+
+    public static Double tan(int degrees) {
+        return tan(new Double(degrees));
+    }
+
+    public static Double sec(int degrees) {
+        return sec(new Double(degrees));
+    }
+
+    public static Double csc(int degrees) {
+        return csc(new Double(degrees));
+    }
+
+    public static Double cot(int degrees) {
+        return cot(new Double(degrees));
+    }
 
 }

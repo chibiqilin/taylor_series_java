@@ -45,7 +45,7 @@ public class SecTest {
 	@Test
 	public void testSecTest() {
 		System.out.println("Sec(" + input + ") = " + expected);
-		assertEquals(expected, trigLib.sec(input), 0.000001);
+		assertEquals(expected, TrigLib.sec(input), 0.000001);
 
 	}
 }

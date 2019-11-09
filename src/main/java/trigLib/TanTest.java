@@ -45,6 +45,6 @@ public class TanTest {
 	public void testTanTest() {
 		System.out.println("Tan(" + input + ") = " + expected);
 		// test accuracy
-		assertEquals(expected, trigLib.tan(input), 0.000001);
+		assertEquals(expected, TrigLib.tan(input), 0.000001);
 	}
 }

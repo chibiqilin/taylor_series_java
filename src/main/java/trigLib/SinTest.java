@@ -48,7 +48,7 @@ public class SinTest {
     public void testSinTest() {
         System.out.println("Sin(" + input + ") = " + expected);
         //test 5 decimal accuracy
-        assertEquals(expected, trigLib.sin(input), 0.000001);
+        assertEquals(expected, TrigLib.sin(input), 0.000001);
 
     }
 }

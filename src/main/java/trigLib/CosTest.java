@@ -44,6 +44,6 @@ public class CosTest {
 	@Test
 	public void testCosTest() {
 		System.out.println("Cos(" + input + ") = " + expected);
-		assertEquals(expected, trigLib.cos(input), 0.000001);
+		assertEquals(expected, TrigLib.cos(input), 0.000001);
 	}
 }

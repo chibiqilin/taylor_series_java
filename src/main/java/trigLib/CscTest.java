@@ -44,6 +44,6 @@ public class CscTest {
 	@Test
 	public void testCscTest() {
 		System.out.println("Csc(" + input + ") = " + expected);
-		assertEquals(expected, trigLib.csc(input), 0.000001);
+		assertEquals(expected, TrigLib.csc(input), 0.000001);
 	}
 }
