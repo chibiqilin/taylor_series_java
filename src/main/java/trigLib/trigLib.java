@@ -7,18 +7,18 @@ public abstract class trigLib {
 
     
     /*
-     * Change degree to radius
+     * Change degree to radian
      */
-    public static double degreeToRadius(double input){
+    public static double degreeToRadian(double input){
     	double rad = input * 1. / 180. * PI;
     	return rad;
     	
     }
     
     /*
-     * Change radius to degree
+     * Change radian to degree
      */
-    public static double radiusToDegree(double input){
+    public static double radianToDegree(double input){
     	double degree = input * 180 / PI;
     	return degree;
     }
@@ -33,7 +33,7 @@ public abstract class trigLib {
 		// change it later
 
 		// TODO: use value to instead of PI
-		double rad = target * 1. / 180. * PI;
+        double rad = (target * 1. / 180. * PI) % (2*PI);
 		// the first element of the taylor series
 		double sum = rad;
 
@@ -57,8 +57,8 @@ public abstract class trigLib {
         // angle to radians
 
         // change it later
-
-        double rad = target * 1. / 180. * PI;
+        double rad = (target * 1. / 180. * PI) % (2*PI);
+        
         // the first element of the taylor series
         double sum = 1.0;
 
