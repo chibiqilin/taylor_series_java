@@ -11,20 +11,18 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
 public class CotTest {
-    private Double input;
-    private Double expected;
+	private Double input;
+	private Double expected;
 
-    public CotTest(Double input, Double expected) {
-        super();
-        this.input = input;
-        this.expected = expected;
-    }
-
+	public CotTest(Double input, Double expected) {
+		super();
+		this.input = input;
+		this.expected = expected;
+	}
 
     @Parameterized.Parameters
     public static Collection data() {
         return Arrays.asList(new Object[][]{
-                //TODO double check this one later
                 {0.0, Double.NaN},
                 {30.0, 1.732050},
                 {45.0, 1.0},
@@ -40,14 +38,13 @@ public class CotTest {
                 {-999.0,0.158384},
                 {Double.POSITIVE_INFINITY, Double.NaN},
                 {Double.NEGATIVE_INFINITY, Double.NaN}
-        });
-    }
+		});
+	}
 
-    @Test
-    public void testCotTest() {
-        System.out.println("Cot(" + input + ") = " + expected);
-        assertEquals(expected, trigLib.cot(input), 0.000001);
-        
-        
-    }
+	@Test
+	public void testCotTest() {
+		System.out.println("Cot(" + input + ") = " + expected);
+		assertEquals(expected, trigLib.cot(input), 0.000001);
+
+	}
 }

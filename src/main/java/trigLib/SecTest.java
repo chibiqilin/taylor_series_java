@@ -11,15 +11,14 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
 public class SecTest {
-    private Double input;
-    private Double expected;
+	private Double input;
+	private Double expected;
 
-    public SecTest(Double input, Double expected) {
-        super();
-        this.input = input;
-        this.expected = expected;
-    }
-
+	public SecTest(Double input, Double expected) {
+		super();
+		this.input = input;
+		this.expected = expected;
+	}
 
     @Parameterized.Parameters
     public static Collection data() {
@@ -38,16 +37,15 @@ public class SecTest {
                 {999.0,6.392453},
                 {-155.0,-1.103377},
                 {-999.0,6.3924535},
-                //TODO FIX THE INFINITY VALUE?
                 {Double.POSITIVE_INFINITY, Double.NaN},
                 {Double.NEGATIVE_INFINITY, Double.NaN}
         });
     }
 
-    @Test
-    public void testSecTest() {
-        System.out.println("Sec(" + input + ") = " + expected);
-        assertEquals(expected, trigLib.sec(input), 0.000001);
-        
-    }
+	@Test
+	public void testSecTest() {
+		System.out.println("Sec(" + input + ") = " + expected);
+		assertEquals(expected, trigLib.sec(input), 0.000001);
+
+	}
 }

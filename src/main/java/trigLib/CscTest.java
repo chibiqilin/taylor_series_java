@@ -11,25 +11,22 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
 public class CscTest {
-    private Double input;
-    private Double expected;
+	private Double input;
+	private Double expected;
 
-    public CscTest(Double input, Double expected) {
-        super();
-        this.input = input;
-        this.expected = expected;
-    }
-
+	public CscTest(Double input, Double expected) {
+		super();
+		this.input = input;
+		this.expected = expected;
+	}
 
     @Parameterized.Parameters
     public static Collection data() {
         return Arrays.asList(new Object[][]{
-                //TODO double check this one later
                 {0.0, Double.NaN},
                 {30.0, 2.0},
                 {45.0, 1.414213},
                 {60.0, 1.154700},
-                   
                 {90.0, 1.0},
                 {120.0, 1.154700},
                 {150.0, 2.0},
@@ -41,12 +38,12 @@ public class CscTest {
                 {-999.0,1.012465},
                 {Double.POSITIVE_INFINITY, Double.NaN},
                 {Double.NEGATIVE_INFINITY, Double.NaN}
-        });
-    }
+		});
+	}
 
-    @Test
-    public void testCscTest() {
-        System.out.println("Csc(" + input + ") = " + expected);
-        assertEquals(expected, trigLib.csc(input), 0.000001);
-    }
+	@Test
+	public void testCscTest() {
+		System.out.println("Csc(" + input + ") = " + expected);
+		assertEquals(expected, trigLib.csc(input), 0.000001);
+	}
 }

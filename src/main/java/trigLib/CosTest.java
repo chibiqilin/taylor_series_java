@@ -11,15 +11,14 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
 public class CosTest {
-    private Double input;
-    private Double expected;
+	private Double input;
+	private Double expected;
 
-    public CosTest(Double input, Double expected) {
-        super();
-        this.input = input;
-        this.expected = expected;
-    }
-
+	public CosTest(Double input, Double expected) {
+		super();
+		this.input = input;
+		this.expected = expected;
+	}
 
     @Parameterized.Parameters
     public static Collection data() {
@@ -40,11 +39,11 @@ public class CosTest {
                 {Double.POSITIVE_INFINITY, Double.NaN},
                 {Double.NEGATIVE_INFINITY, Double.NaN}
         });
-    }
+	}
 
-    @Test
-    public void testCosTest() {
-        System.out.println("Cos(" + input + ") = " + expected);
-        assertEquals(expected, trigLib.cos(input), 0.000001);
-    }
+	@Test
+	public void testCosTest() {
+		System.out.println("Cos(" + input + ") = " + expected);
+		assertEquals(expected, trigLib.cos(input), 0.000001);
+	}
 }

@@ -28,15 +28,15 @@ public class SinTest {
                 {0.0, 0.0},
                 {90.0, 1.0},
                 {30.0, 0.5},
-                {45.0, 0.70710},
-                {60.0, 0.86602},
-                {120.0, 0.86602},
+                {45.0, 0.707106},
+                {60.0, 0.866025},
+                {120.0, 0.866025},
                 {150.0, 0.5},
                 {180.0, 0.0},
                 {270.0, -1.0},
                 {360.0, 0.0},
                 {999.0,-0.987688},
-                {-155.0,-0.42261},
+                {-155.0,-0.422618},
                 {-999.0,0.987688},
                 //TODO FIX THE INFINITY VALUE?
                 {Double.POSITIVE_INFINITY, Double.NaN},
@@ -48,7 +48,7 @@ public class SinTest {
     public void testSinTest() {
         System.out.println("Sin(" + input + ") = " + expected);
         //test 5 decimal accuracy
-        assertEquals(expected, trigLib.sin(input), 0.00001);
+        assertEquals(expected, trigLib.sin(input), 0.000001);
 
     }
 }
