@@ -30,6 +30,20 @@ Implementation of these trigonometric functions will be done using Taylor Series
 
 ----
 
+## Library Methods for Marker
+All the trigonometric functions input are degree. 
+degreeToRadian(double input)
+radianToDegree(double input)
+sin(double degree)
+cos(double degree)
+tan(double degree)
+sec(double degree)
+csc(double degree)
+cot(double degree)
+
+
+----
+
 ## How do I use it?
 
 1. Import the library.
