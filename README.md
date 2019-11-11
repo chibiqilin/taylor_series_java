@@ -4,7 +4,11 @@ This repository stores the submission material for an academic assignment. The p
 ----
 
 ## Assignment Details
-Authors: Andrew Vu (6044937), GeZhang Zhu (5921648)
+Authors: 
+![Repo_List](profile/56411355.jpg)
+Andrew Vu (6044937)(github Id: chibiqilin)
+![Repo_List](profile/1269208.png)
+GeZhang Zhu (5921648)(github Id: Sailosha) 
 
 Institution: Brock University
 
