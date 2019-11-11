@@ -13,7 +13,7 @@ package trigLib;
  */
 public abstract class TrigLib {
 
-    static double PI = 3.14159265; // Value of PI
+    static double PI = 3.1415926535897932; // Value of PI
 
     /**
      * Change degrees to radians
