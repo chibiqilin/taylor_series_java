@@ -14,10 +14,10 @@ Institution: Brock University
 
 Course: COSC 4F00 Fall 2019 Assignment #2
 
-Professor: D. Bockus
+Professor: D. Bockus<br/>
 ![Repo_List](profile/Leopard-2A4-LOSy.jpg)
 
-Due Date: Thursday, November 14th, 2019 4:00pm
+Due Date: Thursday, November 14th, 2019 4:00pm<br/>
 Late Date: Monday, November 18th, 2019 4:00pm
 
 ----
@@ -36,15 +36,15 @@ Implementation of these trigonometric functions will be done using Taylor Series
 ----
 
 ## Library Methods for Marker
-All the trigonometric functions input are degree. 
-degreeToRadian(double input)
-radianToDegree(double input)
-sin(double degree)
-cos(double degree)
-tan(double degree)
-sec(double degree)
-csc(double degree)
-cot(double degree)
+All the trigonometric functions input are degree. <br/>
+degreeToRadian(double input)<br/>
+radianToDegree(double input)<br/>
+sin(double degree)<br/>
+cos(double degree)<br/>
+tan(double degree)<br/>
+sec(double degree)<br/>
+csc(double degree)<br/>
+cot(double degree)<br/>
 
 
 ----
@@ -65,6 +65,8 @@ A test suite will be integral to this assignment as it will help perform tests o
 ----
 
 ## JUnit Test Output
+For more output, please go over the /output screenshot  directory.
+
 ### Sin Test
 ![sin](https://raw.githubusercontent.com/chibiqilin/taylor_series_java/master/output%20screenshot/v4/2019-11-09_21-48-53.png?token=ANOMJW6MCMU4MO5VQWURAMC52C3DG)
 ### Cos Test
