@@ -15,6 +15,7 @@ Institution: Brock University
 Course: COSC 4F00 Fall 2019 Assignment #2
 
 Professor: D. Bockus
+![Repo_List](profile/Leopard-2A4-LOSy.jpg)
 
 Due Date: Thursday, November 14th, 2019 4:00pm
 Late Date: Monday, November 18th, 2019 4:00pm
