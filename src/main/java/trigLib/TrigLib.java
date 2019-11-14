@@ -223,13 +223,9 @@ public abstract class TrigLib {
 	 * the default is RADIAN
 	 */
 	public static double arctan(double target){
-		
-        
 		double sum =target ;
 
-		
 		if (abs(target) < 1) {
-			// add them up until a certain precision (eg. 10)
 			// put 56th right now, don't bother please.
 			for (int i = 1; i <= 56; i++) {
 				if (i % 2 == 0)
@@ -238,16 +234,19 @@ public abstract class TrigLib {
 				else
 					sum -= power(target, 2 * i + 1) / (2 * i + 1);
 			}
-		}else if(target >= 1){
+		}else if(target > 1){
 			sum = PI/2 -1/target;
-			for (int i = 1; i <= 56; i++) {
+			for (int i = 1; i < 56; i++) {
 				if (i % 2 == 0)
 					sum -= 1/ ((2 * i + 1)*(power(target, 2 * i+1)));
 				else
 					sum += 1/ ((2 * i + 1)*(power(target, 2 * i+1)));
 			}
 			
-		}else{
+		}else if(target ==1){
+			sum =0.7853981633974483;
+		}
+		else{
 			sum = -PI/2 -1/target;
 			for (int i = 1; i <= 56; i++) {
 				if (i % 2 == 0)
