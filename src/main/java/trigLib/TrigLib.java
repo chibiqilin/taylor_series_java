@@ -224,7 +224,6 @@ public abstract class TrigLib {
 	 */
 	public static double arctan(double target){
 		
-        target = (target * 1. / 180. * PI) % (2 * PI);
         
 		double sum =target ;
 
