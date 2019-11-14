@@ -308,6 +308,54 @@ public abstract class TrigLib {
 		}
 	}
 	
+	//input radian 
+	public static double arccot(double input) {
+		double value;
+		
+		value = PI/2 - arctan(input);
+		return value;
+		
+	}
+	
+	//input radian 
+	public static double arcsec(double input) {
+		double value;
+		if (abs(input)<=1)
+			return value = Double.NaN;
+		else{
+		
+		value = arccos(1.0/input);
+		return value;
+		}
+		
+	}
+	
+	//input radian 
+	public static double arccsc(double input) {
+		double value;
+		if (abs(input)<=1)
+			return value = Double.NaN;
+		else{
+		
+		value = arcsin(1.0/input);
+		return value;
+		}
+		
+	}
+	
+    public static Double arccsc(int degrees) {
+        return arccsc(new Double(degrees));
+    }
+    
+    public static Double arcsec(int degrees) {
+        return arcsec(new Double(degrees));
+    }
+    
+    
+    public static Double arccot(int degrees) {
+        return arccot(new Double(degrees));
+    }
+	
     public static Double arccos(int degrees) {
         return arccos(new Double(degrees));
     }
