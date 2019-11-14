@@ -23,15 +23,15 @@
     <session id="2021842095">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
+          <entry key="project.closed" value="17" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.7" value="4" />
-          <entry key="project.open.time.8" value="6" />
+          <entry key="project.open.time.7" value="5" />
+          <entry key="project.open.time.8" value="7" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -49,12 +49,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="10" />
-          <entry key="java" value="13068" />
+          <entry key="java" value="13193" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="13068" />
+          <entry key="JAVA" value="13193" />
           <entry key="PLAIN_TEXT" value="10" />
         </counts>
       </usages-collector>
@@ -65,8 +65,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/CosTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="35" column="33" lean-forward="true" selection-end-line="49" />
+            <state relative-caret-position="476">
+              <caret line="35" column="33" selection-end-line="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -134,11 +134,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/TrigLib.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4420">
-              <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+            <state relative-caret-position="268">
+              <caret line="253" column="29" lean-forward="true" selection-start-line="253" selection-start-column="29" selection-end-line="253" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -161,11 +161,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/ACosTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+            <state relative-caret-position="476">
+              <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -512,9 +512,9 @@
         <option value="$PROJECT_DIR$/src/main/java/trigLib/TrigIllegalArgumentException.java" />
         <option value="$PROJECT_DIR$/src/main/java/trigLib/UndefinedException.java" />
         <option value="$PROJECT_DIR$/src/main/java/trigLib/trigLib.java" />
-        <option value="$PROJECT_DIR$/src/main/java/trigLib/TrigLib.java" />
         <option value="$PROJECT_DIR$/src/main/java/trigLib/ASinTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/trigLib/ACosTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/trigLib/TrigLib.java" />
       </list>
     </option>
   </component>
@@ -529,6 +529,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -566,12 +568,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573704991055" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573707226890" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -604,7 +604,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ACosTest">
+  <component name="RunManager" selected="JUnit.trigLib in taylorTrig_main">
     <configuration name="ACosTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="taylorTrig_main" />
       <extension name="coverage">
@@ -633,20 +633,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ASinTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="taylorTrig_main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="trigLib.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="trigLib" />
-      <option name="MAIN_CLASS_NAME" value="trigLib.ASinTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ATanTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="taylorTrig_main" />
       <extension name="coverage">
@@ -671,6 +657,20 @@
       </extension>
       <option name="PACKAGE_NAME" value="trigLib" />
       <option name="MAIN_CLASS_NAME" value="trigLib.CosTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="trigLib in taylorTrig_main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="taylorTrig_main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="trigLib.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="trigLib" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -723,19 +723,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ASinTest" />
       <item itemvalue="JUnit.ACscTest" />
       <item itemvalue="JUnit.ATanTest" />
       <item itemvalue="JUnit.CosTest" />
       <item itemvalue="JUnit.ACosTest" />
+      <item itemvalue="JUnit.trigLib in taylorTrig_main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.trigLib in taylorTrig_main" />
         <item itemvalue="JUnit.ACosTest" />
         <item itemvalue="JUnit.CosTest" />
         <item itemvalue="JUnit.ATanTest" />
         <item itemvalue="JUnit.ACscTest" />
-        <item itemvalue="JUnit.ASinTest" />
       </list>
     </recent_temporary>
   </component>
@@ -753,21 +753,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="trigLib_in_taylorTrig_main - 2019.11.08 at 23h 16m 12s.xml">
-      <configuration name="trigLib in taylorTrig_main" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="trigLib_in_taylorTrig_main - 2019.11.09 at 21h 42m 36s.xml">
-      <configuration name="trigLib in taylorTrig_main" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="trigLib_in_taylorTrig_main - 2019.11.11 at 11h 55m 20s.xml">
-      <configuration name="trigLib in taylorTrig_main" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ASinTest - 2019.11.13 at 23h 10m 51s.xml">
-      <configuration name="ASinTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ASinTest - 2019.11.13 at 23h 11m 33s.xml">
-      <configuration name="ASinTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ACscTest - 2019.11.13 at 23h 11m 41s.xml">
       <configuration name="ACscTest" configurationId="JUnit" />
     </history-entry>
@@ -783,6 +768,21 @@
     <history-entry file="ACosTest - 2019.11.13 at 23h 16m 32s.xml">
       <configuration name="ACosTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="trigLib_in_taylorTrig_main - 2019.11.13 at 23h 40m 02s.xml">
+      <configuration name="trigLib in taylorTrig_main" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="trigLib_in_taylorTrig_main - 2019.11.13 at 23h 44m 51s.xml">
+      <configuration name="trigLib in taylorTrig_main" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="trigLib_in_taylorTrig_main - 2019.11.13 at 23h 51m 56s.xml">
+      <configuration name="trigLib in taylorTrig_main" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="trigLib_in_taylorTrig_main - 2019.11.13 at 23h 52m 59s.xml">
+      <configuration name="trigLib in taylorTrig_main" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="trigLib_in_taylorTrig_main - 2019.11.13 at 23h 53m 44s.xml">
+      <configuration name="trigLib in taylorTrig_main" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -796,7 +796,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29584223" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3022388" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -883,6 +883,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/CosTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="35" column="33" selection-end-line="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/CscTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -933,13 +943,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/TrigLib.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4420">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/ASinTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -954,23 +957,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/CosTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/ACosTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="35" column="33" lean-forward="true" selection-end-line="49" />
+        <state relative-caret-position="476">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/ACosTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/trigLib/TrigLib.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="268">
+          <caret line="253" column="29" lean-forward="true" selection-start-line="253" selection-start-column="29" selection-end-line="253" selection-end-column="29" />
         </state>
       </provider>
     </entry>
