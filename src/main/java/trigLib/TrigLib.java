@@ -267,7 +267,6 @@ public abstract class TrigLib {
 	 */
 	public static double arcsin(double input) {
 
-		input = (input * 1. / 180. * PI) % (2 * PI);
 		double sum = 0;
 
 		double numerator;
