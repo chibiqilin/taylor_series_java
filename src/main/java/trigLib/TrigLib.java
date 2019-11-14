@@ -278,7 +278,7 @@ public abstract class TrigLib {
 		if (abs(input) > 1) {
 			return sum = Double.NaN;
 		}else if ( input ==1){
-			sum = 1.5707963267948966;
+			return sum = 1.5707963267948966;
 		}
 		else {
 			// add them up until a certain precision (eg. 10)
