@@ -223,9 +223,12 @@ public abstract class TrigLib {
 	 * the default is RADIAN
 	 */
 	public static double arctan(double target){
-
+		
+        target = (target * 1. / 180. * PI) % (2 * PI);
+        
 		double sum =target ;
 
+		
 		if (abs(target) < 1) {
 			// add them up until a certain precision (eg. 10)
 			// put 56th right now, don't bother please.
