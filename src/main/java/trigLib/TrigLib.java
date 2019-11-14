@@ -261,8 +261,40 @@ public abstract class TrigLib {
 		return sum;
 	}
 	
+	/*
+	 * input is radian
+	 * using v5 from Roy
+	 */
+	public static double arcsin(double input) {
+
+		input = (input * 1. / 180. * PI) % (2 * PI);
+		double sum = 0;
+
+		double numerator;
+		double denominator;
+
+		double twoNFact;
+		double NFact;
+		// add them up until a certain precision (eg. 10)
+		for (int i = 0; i <= 65; i++) {
+			twoNFact = factorial(2 * i);
+			numerator = twoNFact;
+			NFact = factorial(i);
+			denominator = (power(2, 2 * i)) * (power(NFact, 2));
+			sum += ((numerator / denominator) * (power(input, 2 * i + 1)) / (2 * i + 1));
+
+		}
+
+		return sum;
+
+	}
+	
+    public static Double arcsin(int degrees) {
+        return arcsin(new Double(degrees));
+    }
+    
     public static Double arctan(int degrees) {
-        return sin(new Double(degrees));
+        return arctan(new Double(degrees));
     }
 
     // Methods for sin, cos, tan, sec, csc, cot to accept integer values
