@@ -275,9 +275,12 @@ public abstract class TrigLib {
 		double twoNFact;
 		double NFact;
 		
-		if (abs(input) >= 1) {
+		if (abs(input) > 1) {
 			return sum = Double.NaN;
-		} else {
+		}else if ( input ==1){
+			sum = 1.5707963267948966;
+		}
+		else {
 			// add them up until a certain precision (eg. 10)
 			for (int i = 0; i <= 65; i++) {
 				twoNFact = factorial(2 * i);
