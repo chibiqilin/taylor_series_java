@@ -205,6 +205,63 @@ public abstract class TrigLib {
         else
             return n * factorial(n - 1);
     }
+    
+    
+    
+    
+    /**
+     * return the absolute value 
+     * @param target input
+     * @return returns absolute value of target
+     */
+	public static double abs(double target){
+		return target >0 ?target:-target;
+	}
+	
+	/*
+	 * input is radian
+	 * the default is RADIAN
+	 */
+	public static double arctan(double target){
+
+		double sum =target ;
+
+		if (abs(target) < 1) {
+			// add them up until a certain precision (eg. 10)
+			// put 56th right now, don't bother please.
+			for (int i = 1; i <= 56; i++) {
+				if (i % 2 == 0)
+
+					sum += power(target, 2 * i + 1) / (2 * i + 1);
+				else
+					sum -= power(target, 2 * i + 1) / (2 * i + 1);
+			}
+		}else if(target >= 1){
+			sum = PI/2 -1/target;
+			for (int i = 1; i <= 56; i++) {
+				if (i % 2 == 0)
+					sum -= 1/ ((2 * i + 1)*(power(target, 2 * i+1)));
+				else
+					sum += 1/ ((2 * i + 1)*(power(target, 2 * i+1)));
+			}
+			
+		}else{
+			sum = -PI/2 -1/target;
+			for (int i = 1; i <= 56; i++) {
+				if (i % 2 == 0)
+					sum -= 1/ ((2 * i + 1)*(power(target, 2 * i+1)));
+				else
+					sum += 1/ ((2 * i + 1)*(power(target, 2 * i+1)));
+			}
+			
+		}
+		
+		return sum;
+	}
+	
+    public static Double arctan(int degrees) {
+        return sin(new Double(degrees));
+    }
 
     // Methods for sin, cos, tan, sec, csc, cot to accept integer values
     public static Double sin(int degrees) {
