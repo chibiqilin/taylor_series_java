@@ -11,6 +11,11 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 
+
+/**
+ * Example of performing parameterized tests with Object instead of Double, to perform check at the testing
+ * level for flexibility in Number type.
+ */
 @RunWith(Parameterized.class)
 public class mismatchTest {
     private Object input;
