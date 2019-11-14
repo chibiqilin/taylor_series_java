@@ -267,6 +267,7 @@ public abstract class TrigLib {
 	 */
 	public static double arcsin(double input) {
 
+
 		double sum = 0;
 
 		double numerator;
@@ -274,19 +275,43 @@ public abstract class TrigLib {
 
 		double twoNFact;
 		double NFact;
-		// add them up until a certain precision (eg. 10)
-		for (int i = 0; i <= 65; i++) {
-			twoNFact = factorial(2 * i);
-			numerator = twoNFact;
-			NFact = factorial(i);
-			denominator = (power(2, 2 * i)) * (power(NFact, 2));
-			sum += ((numerator / denominator) * (power(input, 2 * i + 1)) / (2 * i + 1));
+		
+		if (abs(input) >= 1) {
+			return sum = Double.NaN;
+		} else {
+			// add them up until a certain precision (eg. 10)
+			for (int i = 0; i <= 65; i++) {
+				twoNFact = factorial(2 * i);
+				numerator = twoNFact;
+				NFact = factorial(i);
+				denominator = (power(2, 2 * i)) * (power(NFact, 2));
+				sum += ((numerator / denominator) * (power(input, 2 * i + 1)) / (2 * i + 1));
 
+			}
+
+			return sum;
 		}
 
-		return sum;
-
 	}
+	
+	
+	//input radian 
+	public static double arccos(double input) {
+		double value;
+
+		if (abs(input) >= 1) {
+			return value = Double.NaN;
+		} else {
+
+			value = PI / 2 - arcsin(input);
+			return value;
+		}
+	}
+	
+    public static Double arccos(int degrees) {
+        return arccos(new Double(degrees));
+    }
+    
 	
     public static Double arcsin(int degrees) {
         return arcsin(new Double(degrees));
